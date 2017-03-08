@@ -8,4 +8,4 @@ let Plugins : Array<IPlugin> = [
     new TestPlugin()
 ];
 
-export default Plugins
+export default Plugins;

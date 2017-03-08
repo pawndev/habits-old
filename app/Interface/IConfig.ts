@@ -7,5 +7,6 @@ export interface IConfig {
     ServerSettings: any;
     Uri: any;
     Routes: Array<Hapi.IRouteConfiguration>;
-    Plugins: Array<IPlugin>
+    Plugins: Array<IPlugin>,
+    Decorations: Array<IPlugin>
 }

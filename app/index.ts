@@ -4,7 +4,7 @@ import App from './Bootstrap/App'
 const Application = new App(Config.ServerSettings.Hapi);
 Application
 	.AddPlugins(Config.Plugins)
-	.AddDecorations()
+	.AddDecorations(Config.Decorations)
 	.AddRoutes(Config.Routes)
 	.Start().then(() => {
 		console.info(`Server started successfully on port ${Config.ServerSettings.Hapi.port}`);

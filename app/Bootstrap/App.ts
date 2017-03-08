@@ -1,5 +1,5 @@
 import * as Hapi from 'hapi';
-import { IPlugin } from '../Interface/IPlugin'
+import { IPlugin } from '../Interface/IPlugin';
 
 export default class App {
     private server: Hapi.Server;
@@ -13,7 +13,8 @@ export default class App {
         return this.server.start();
     }
 
-    AddDecorations() {
+    AddDecorations(decorationsArray: Array<IPlugin>) {
+        this.server.register(decorationsArray);
         return this;
     }
 

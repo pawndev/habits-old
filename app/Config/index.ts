@@ -4,6 +4,7 @@ import ServerSettings from './ServerSettings';
 import Uri from './Uri';
 import Routes from './Routes';
 import Plugins from './Plugins';
+import Decorations from './Decorations';
 
 const env = process.env;
 
@@ -13,7 +14,8 @@ const Config : IConfig = {
     ServerSettings: ServerSettings,
     Uri: Uri,
     Routes: Routes,
-    Plugins: Plugins
+    Plugins: Plugins,
+    Decorations: Decorations
 };
 
 export default Config;
