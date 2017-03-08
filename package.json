@@ -1,0 +1,28 @@
+{
+  "name": "hapits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "hapi-decorators": "^0.4.3",
+    "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "start": "node build/index.js",
+    "watch": "nodemon -e ts --watch app --exec \"npm run build && npm run start\"",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/boom": "^0.0.33",
+    "@types/hapi": "^16.0.0",
+    "@types/hapi-decorators": "^0.4.3",
+    "@types/joi": "^10.0.1",
+    "@types/lodash": "^4.14.54",
+    "@types/node": "^7.0.5",
+    "nodemon": "^1.11.0",
+    "typescript": "^2.2.1"
+  }
+}
