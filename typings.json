@@ -4,7 +4,8 @@
     "hapi": "registry:dt/hapi#16.0.0+20170125175540",
     "hapi-decorators": "registry:dt/hapi-decorators#0.4.3+20170211002514",
     "joi": "registry:dt/joi#10.0.0+20170211105955",
-    "lodash": "registry:dt/lodash#4.14.0+20170302013423"
+    "lodash": "registry:dt/lodash#4.14.0+20170302013423",
+    "mongodb": "registry:dt/mongodb#2.1.0+20170212052546"
   },
   "globalDependencies": {
     "node": "registry:dt/node#7.0.0+20170204020307"
