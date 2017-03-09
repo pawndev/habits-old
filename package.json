@@ -11,6 +11,7 @@
     "lodash": "^4.17.4"
   },
   "scripts": {
+    "setup": "npm install & typings install",
     "start": "node build/index.js",
     "watch": "nodemon -e ts --watch app --exec \"npm run build && npm run start\"",
     "build": "tsc"
