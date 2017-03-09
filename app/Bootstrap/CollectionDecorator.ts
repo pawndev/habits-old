@@ -1,5 +1,5 @@
 import { default as MongoDbConnection } from './Database';
-import Config from '../Config';
+import { default as Config } from '../Config';
 
 export default function Collection(collectionName: string, alias?: string) {
     return function decoratorFactory(target: Function, propertyName?: string): void {

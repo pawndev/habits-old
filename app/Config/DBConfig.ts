@@ -4,8 +4,7 @@ const DBConfig : Object = {
     password: process.env.DB_PASSWORD,
     url: "mongo",
     port: "27017",
-    database: "hapits",
-    collections: ["test"]
+    database: "hapits"
 };
 
 export default DBConfig;
