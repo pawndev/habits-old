@@ -1,5 +1,17 @@
 To start this project make sure you've typescript, typings, nodemon, yarn
 
+## Global Install
+
+```bash
+npm install -g typescript
+npm install -g nodemon
+npm install -g typings
+```
+
+And for install yarn, please check the [official yarn website]
+
+## Begin
+
 ```bash
 typings install
 yarn install
@@ -31,3 +43,5 @@ I recommend to work with visual-studio-code, because it's one of the most popula
 - [ ] Joi Validation
 - [ ] LDAP Token
 - [ ] Activate Template Engine (just in case)
+
+[official yarn website]: https://yarnpkg.com/fr/docs/install#linux-tab
