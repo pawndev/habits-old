@@ -1,5 +1,6 @@
 import * as Hapi from 'hapi';
 import { controller, get, post, put, cache, config, route, validate, Controller } from 'hapi-decorators';
+import { TestService } from '../Services';
 
 @controller('/test')
 export default class TestController implements Controller {
@@ -17,6 +18,7 @@ export default class TestController implements Controller {
         payload: false
     })
     getHandler(request: Hapi.Request, reply: Hapi.IReply) {
+        // TestService.getAllTest
         reply({ success: true, msg: "billy" });
     }
 
@@ -37,6 +39,7 @@ export default class TestController implements Controller {
 
     @get('/{id}')
     getOneHandler(request: Hapi.Request, reply: Hapi.IReply) {
-        reply({ success: true, param: request.params.id });
+        (reply as any).unauthorized("nop");
+        // reply({ success: true, param: request.params.id });
     }
 }
