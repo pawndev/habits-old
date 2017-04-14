@@ -16,7 +16,8 @@ export default class BoomDecoration implements IPlugin {
 
         server.decorate('reply', 'notFound', this.notFound);
         server.decorate('reply', 'badImplementation', this.badImplementation);
-        server.decorate('reply', 'unauthorized', this.badImplementation);
+        server.decorate('reply', 'unauthorized', this.unauthorized);
+        server.decorate('reply', 'badRequest', this.badRequest);
 
         this._register(server, options);
         next();

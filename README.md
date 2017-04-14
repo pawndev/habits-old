@@ -36,6 +36,7 @@ I recommend to work with visual-studio-code, because it's one of the most popula
 - [x] Routes
 - [x] Plugins
 - [ ] Services
+- [ ] @inject decorator
 - [ ] Mongo in promise pattern
 - [ ] Units Test
 - [ ] TSLint
