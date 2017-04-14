@@ -5,6 +5,7 @@ export default class TestService {
     constructor() {}
 
     getAllTest() {
-        return (this as any).test.find({});
+        return typeof (this as any).test;
+        // return (this as any).test.find({});
     }
 }
